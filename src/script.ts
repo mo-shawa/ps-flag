@@ -2,6 +2,7 @@ import GUI from 'lil-gui'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
+import flagPath from './assets/textures/ps-flag.png'
 import testFragmentShader from './shaders/test/fragment.glsl'
 import testVertexShader from './shaders/test/vertex.glsl'
 
@@ -22,7 +23,7 @@ const scene = new THREE.Scene()
  * Textures
  */
 const textureLoader = new THREE.TextureLoader()
-const flagTexture = textureLoader.load('/textures/ps-flag.png')
+const flagTexture = textureLoader.load(flagPath)
 /**
  * Test mesh
  */
